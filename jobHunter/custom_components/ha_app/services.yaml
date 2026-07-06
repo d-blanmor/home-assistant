@@ -1,0 +1,26 @@
+# custom_components/ha_app/services.yaml
+start_api:
+  description: Start the FastAPI HTTP server.
+  fields: {}
+
+stop_api:
+  description: Stop the FastAPI HTTP server.
+  fields: {}
+
+list_all:
+  description: List all roles/jobspecs available in the DB
+  fields:
+    api_key:
+      description: Optional API key for authentication
+      required: false
+      example: "my_secret"
+
+create_role:
+  description: Create a new role entry from JSON payload.
+  fields:
+    role:
+      description: Role definition as dict (fields exactly match your ORM)
+      required: true
+        example:
+          name: "Software Engineer"
+          location_id: 3

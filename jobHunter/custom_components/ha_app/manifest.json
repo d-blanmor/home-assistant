@@ -1,0 +1,13 @@
+{
+  "domain": "ha_app",
+  "name": "JobHunter App Integration",
+  "documentation": "https://github.com/your-repo/jobhunter/blob/main/README.md",
+  "dependencies": [],
+  "requirements": [
+    "sqlalchemy==1.4.*",
+    "pyyaml"
+  ],
+  "codeowners": ["@owner"],
+  "config_flow": false,
+  "iot_class": "cloud_polling"
+}
